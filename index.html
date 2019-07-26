@@ -415,9 +415,9 @@
 					<input type="submit" id="tij" class="popup-btn popup-btn1" value="提交">
 				</form>
 				<ul class="email">
-						<li><input type="text" name="Your Name" placeholder="名字"></li>
-						<li><input type="text" name="Your Email" placeholder="邮箱"></li>
-						<li><input type="text" name="Phone Number" placeholder="电话"></li>
+						<li><input type="text" name="Name" placeholder="名字"></li>
+						<li><input type="text" name="Email" placeholder="邮箱"></li>
+						<li><input type="text" name="Number" placeholder="电话"></li>
 						<li class="message"><textarea name="message"  placeholder="留言"></textarea> </li>
 						<button class="btn" >提交</button>
 						<a href="mailto" id="send"></a>
@@ -439,9 +439,9 @@
 	<!-- 发送邮件留言实现 -->
 	<script type="text/javascript">
 		function sendEmail(){
-		    var name=$("[name='Your Name']").val(),
-		        email=$("[name='Your Email']").val(),
-		        number=$("[name='Your Number']").val(),
+		    var name=$("[name='Name']").val(),
+		        email=$("[name='Email']").val(),
+		        number=$("[name='Number']").val(),
 		        message=$("[name='message']").val(),
 		        body="My Name is: "+name+"%0a%0d"
 		            +"My Email Address is: "+email+"%0a%0d"
