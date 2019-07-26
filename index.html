@@ -405,30 +405,35 @@
 	<div class="contact" id="contact">
 		<div class="container">
 			<span class="about-top-w3">发送邮箱</span>
-			<h4 class="title-w3ls">CONTACT ME</h4>
+			<h4 class="title-w3ls">练习 我</h4>
 			<div class="col-md-5 contact-agileits-w3layouts">
-				<form action="mailto:778796395@qq.com" method="post" name='form' enctype="text/plain">
+				<!-- <form action="mailto:778796395@qq.com" method="post" name='form' enctype="text/plain">
 					<input type="text" name="Your Name" placeholder="名字" required="" />
 					<input type="text" name="Your Email" placeholder="邮箱" required="" />
 					<input type="text" Name="Phone Number" placeholder="电话" required="" />
 					<textarea name="Message" placeholder="留言" required></textarea>
 					<input type="submit" id="tij" class="popup-btn popup-btn1" value="提交">
-				</form>
+				</form> -->
 				<ul class="email">
 						<li><input type="text" name="Name" placeholder="名字"></li>
 						<li><input type="text" name="Email" placeholder="邮箱"></li>
 						<li><input type="text" name="Number" placeholder="电话"></li>
 						<li class="message"><textarea name="message"  placeholder="留言"></textarea> </li>
 						<button class="btn" >提交</button>
+						
 						<a href="mailto" id="send"></a>
 					</ul>
 
 				<h5 class="sub">寻找我的方式</h5>
 				<p><span>地点</span> : 宝安区茶光</p>
-				<p> <span>我滴手机</span> <a href="tel:15581155868">: 15581155868&nbsp;</a></p>
+				<p> <span>我滴手机</span> <a href="tel:15581155868">: 15581155868
+						<i class="fa fa-volume-control-phone" aria-hidden="true" style="margin-left: 1em"></i></a>&nbsp;点击拨打</p>
+				</a>
+					
 				<p><span>Email</span><a href="mailto:778796395@qq.com"> : 778796395@qq.com </br>
-						<i class="fa fa-envelope-o" aria-hidden="true" style="margin-left: 5em"></i></a>&nbsp;手机端点这编辑发送
+						
 				</p>
+				<p><i class="fa fa-warning">注: 电脑的需安装Outlook,手机端要安装邮箱App.才能留言</i></p>
 			</div>
 		</div>
 	</div>
@@ -454,36 +459,36 @@
 		$(window).ready(
 		    $(".btn").click(sendEmail)
 		);	
-		(function ($) {
-			$("#tij").on("click", function () {
-				console.log("aa");
-				var args = [];
-				if (typeof subject !== 'undefined') {
-					args.push('subject=' + encodeURIComponent('主题内容'));
-				}
-				var name = $("input[name='Your Name']").val();
-				var iphone = $("input[name='Phone Number']").val();
-				var Email = $("input[name='Your Email']").val();
-				var Message = $("input[name='Message']").val();
-				// var body = name + "\n" + iphone + "\n" + Email + "\n" + Message
-				var body="My Name is: "+name+"%0a%0d"
-		            +"My Email Address is: "+Email+"%0a%0d"
-		            +"My Phone Number is: "+iphone+"%0a%0d"
-		            +"Message:"+"%0a%0d"+Message;
-				if (typeof body !== 'undefined') {
-					args.push('body=' + encodeURIComponent(body))
-				}
+		// (function ($) {
+		// 	$("#tij").on("click", function () {
+		// 		console.log("aa");
+		// 		var args = [];
+		// 		if (typeof subject !== 'undefined') {
+		// 			args.push('subject=' + encodeURIComponent('主题内容'));
+		// 		}
+		// 		var name = $("input[name='Your Name']").val();
+		// 		var iphone = $("input[name='Phone Number']").val();
+		// 		var Email = $("input[name='Your Email']").val();
+		// 		var Message = $("input[name='Message']").val();
+		// 		// var body = name + "\n" + iphone + "\n" + Email + "\n" + Message
+		// 		var body="My Name is: "+name+"%0a%0d"
+		//             +"My Email Address is: "+Email+"%0a%0d"
+		//             +"My Phone Number is: "+iphone+"%0a%0d"
+		//             +"Message:"+"%0a%0d"+Message;
+		// 		if (typeof body !== 'undefined') {
+		// 			args.push('body=' + encodeURIComponent(body))
+		// 		}
 
-				var url = 'mailto:' + encodeURIComponent('778796395@qq.com');
-				if (args.length > 0) {
-					url += '?' + args.join('&');
-				}
-				console.log(url);
-				window.location = url;
-				return url;
-			});
+		// 		var url = 'mailto:' + encodeURIComponent('778796395@qq.com');
+		// 		if (args.length > 0) {
+		// 			url += '?' + args.join('&');
+		// 		}
+		// 		console.log(url);
+		// 		window.location = url;
+		// 		return url;
+		// 	});
 
-		})(jQuery);
+		// })(jQuery);
 	</script>
 	<!-- here stars scrolling icon
 	<script type="text/javascript">

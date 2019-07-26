@@ -40,8 +40,12 @@ body a {
 /* .clearfix {*zoom: 1;}  */
 /*-- banner --*/
 .btn{
-	background-color:rgba(8, 131, 84, 0.3);
-	width: 80px;
+	background-color:rgba(4, 70, 45, 0.5);
+	width: 100px;
+	margin-top: 10px;
+	margin-left: 35%;
+	border-radius: 0px;
+	color: #fff;
 	
 }
 .header ul li a,.more a,.footer p a,input[type="submit"],.recent-comments-grid-right h4 a,.admin-right p a,.tags ul li a,.comments-list ul li a,.categories ul li a,.comments-list h3 a,.popular-right h5 a,.mail-grid-left-pos,.mail-grid-left,.team-grid1-sub,.footer-copy-grid ul li a,.about-grid-left1 ul li a,.about-grid ul li a{
