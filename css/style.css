@@ -19,6 +19,9 @@ ul,label{
 	margin:0;
 	padding:0;
 }
+li{
+	list-style: none;
+}
 body a:hover{
 	text-decoration:none;
 }
@@ -36,6 +39,11 @@ body a {
 
 /* .clearfix {*zoom: 1;}  */
 /*-- banner --*/
+.btn{
+	background-color:rgba(8, 131, 84, 0.3);
+	width: 80px;
+	
+}
 .header ul li a,.more a,.footer p a,input[type="submit"],.recent-comments-grid-right h4 a,.admin-right p a,.tags ul li a,.comments-list ul li a,.categories ul li a,.comments-list h3 a,.popular-right h5 a,.mail-grid-left-pos,.mail-grid-left,.team-grid1-sub,.footer-copy-grid ul li a,.about-grid-left1 ul li a,.about-grid ul li a{
 	transition:.5s ease-in-out;
 	-webkit-transition:.5s ease-in-out;
