@@ -1,0 +1,62 @@
+手机web页面调用手机QQ实现在线聊天的效果
+方法一：
+html代码如下：
+
+<a href="javascript:;" onclick="chatQQ()">QQ咨询</a>
+js代码如下：
+
+<script>
+function chatQQ(){
+//其中1234567指的是QQ号码
+window.location.href="mqqwpa://im/chat?chat_type=wpa&uin=1234567&version=1&src_type=web&web_src=oicqzone.com";
+}
+</script>
+方法二：
+代码如下：
+
+<a href="http://wpa.qq.com/msgrd?v=3&uin=1234567&site=qq&menu=yes">QQ客服1</a>
+注意： 
+１. 手机端调用手机ＱＱ，不会停留在当ｗｅｂ页面，而是直接调用手机ＱＱ的ａｐｐ，留在ａｐｐ； 
+2. PC端调用QQ.exe应用程序，在桌面窗口中会弹出浏览器对话框，一般都是浏览器端先拦截请求，再让用户选择是否启动QQ应用程序的；参考下面的表格1。 
+3. 因设备不同，所以有时候使用的协议也不相同，参考下面的表格2。
+
+统计表1 - 浏览器默认拦截
+PC端：浏览器类型	是否拦截提示	拦截率
+IE	否	一般
+Firefox	是	高
+360	是	一般
+Google	是	高
+统计表2 - 设备端与协议类型
+设备类型	协议方式
+PC端	tencent://
+移动端	mqqwpa://
+移动端	wpa
+
+<a href="mqqapi://card/show_pslcard?src_type=internal&amp;version=1&amp;uin=5555530&amp;card_type=group&amp;source=qrcode" target="_blank">移动端</a>
+今天分析了一下一键添加QQ群的代码，首先，方法很简单：
+
+打开http://qun.qq.com/join.html，选择你的群，比如我的群5555530吧。
+
+链接：http://shang.qq.com/wpa/qunwpa?idkey=d28c1698219d2f5401e7152220f96bcb82a21e2794a474be4e83819546059c00
+
+测试：通用按钮
+
+下面开始分析啦。大家可以点击测试按钮。
+
+首先是PC端：tencent://groupwpa/?subcmd=all&param=d28c1698219d2f5401e7152220f96bcb82a21e2794a474be4e83819546059c00
+
+测试：PC端
+
+移动端：mqqapi://card/show_pslcard?src_type=internal&version=1&uin=5555530&card_type=group&source=qrcode
+
+测试：移动端
+
+下面接着是打开QQ群按钮啦。
+
+tencent://groupwpa/?subcmd=all&fuin=574201314&param=d28c1698219d2f5401e7152220f96bcb82a21e2794a474be4e83819546059c00
+
+测试：选定QQ号
+
+这里有个参数是fuin=574201314指定QQ号，下面是通用的。
+
+tencent://groupwpa/?subcmd=all&param=d28c1698219d2f5401e7152220f96bcb82a21e2794a474be4e83819546059c00

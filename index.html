@@ -26,15 +26,6 @@
 	<!-- start-smooth-scrolling -->
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-			});
-		});
-	</script>
-	<!-- start-smooth-scrolling -->
 </head>
 
 <body>
@@ -78,10 +69,8 @@
 				<!-- 社交按钮 -->
 				<div class="social-icons anmated wow bounceInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
 					<ul class="top-links">
-						<li><!--<a
-								href="tencent://message/?uin=778796395&Menu=yes& Service=300&sigT=42a1e5347953b64c5ff3980f8a6e644d4b31456cb0b6ac6b27663a3c4dd0f4aa14a543b1716f9d45">-->
-								<a href="mqqwpa://im/chat?chat_type=wpa&uin=778796395&version=1&src_type=web&web_src=oicqzone.com" target="_blank">
-								<i class="fa fa-qq"></i></i></a></li>
+						<li><a	href="tencent://message/?uin=778796395&Menu=yes& Service=300&sigT=42a1e5347953b64c5ff3980f8a6e644d4b31456cb0b6ac6b27663a3c4dd0f4aa14a543b1716f9d45">
+							<i class="fa fa-qq"></i></i></a></li>
 
 						<li style=" position: relative;"><a id="weixin" href="#">
 
@@ -143,14 +132,12 @@
 						<li>1、精通HTML5+CSS3 网站构建及优化，能够快速精确还原设计图；</li>
 						<li>2、熟悉使用原生 javaScript，能够使用 js 进行页面内复杂逻辑的处理；</li>
 						<li>3、会使用sass、less等css预编译技术。</li>
-						
 						<li>4、熟练使用 Bootstrap等前端主流框架和swiper等插件，响应式开发；</li>
 						<li>5、熟练使用 jQuery前端类库和 Ajax 交互技术进行与服务端交互；</li>
-						<li>6、熟练使用 Vue，以及Vue router、axios、vue cli3.0、vue X、Element UI。</li>
+						<li>6、熟练使用 Vue，以及Element UI,Vant组件库</li>
 						<li>7、熟练运用 git版本控制器进行项目部署；</li>
-						<li>8、对ES6语法有过了解、精通FONTAWSOME 、iconfont等字体图标库。</li>
-						<li>9、熟练运用 React开发项目</li>
-						<li>10、熟练使用mpvue+weui开发微信小程序;</li>
+						<li>8、对ES6语法有过了解、精通FONTAWSOME 、iconfont等字体图标库。</li>						
+						<li>9、熟练使用mpvue+weui开发微信小程序;</li>
 					</ul>
 
 				</div>
@@ -158,26 +145,6 @@
 				<!-- <div class="clearfix"></div> -->
 			</div>
 		</div>
-		<script>
-			(function ($) {
-				$(".menu-icon").on("click", function () {
-					$(this).toggleClass("open");
-					$(".container").toggleClass("nav-open");
-					$("nav ul li").toggleClass("animate");
-				});
-				$("#weixinimg").on("click", function () {
-
-					$("#weixinimg").fadeOut(500);
-				});
-				$("#weixin").on("click", function (e) {
-					e.preventDefault();
-					$("#weixinimg").fadeToggle(500);
-				});
-
-			})(jQuery);
-
-		</script>
-
 	</div>
 
 	<!-- //banner -->
@@ -187,9 +154,9 @@
 			<span class="about-top-w3">我是谁?</span>
 			<h4 class="title-w3ls">关于我</h4>
 			<h5 class="sub">我自己的简要介绍</h5>
-			<p class="para-w3-agile">本人热爱前端技术，对前端技术有浓厚兴趣，喜欢团队工作，愿意虚心学习，有一定的自我约束和控制能力，以前学美术的，审美还可以，喜欢把接触过的知识做成思维导图.
-				</br>具有较强的自学能力，对工作的责任心强，严格要求自己完成任务。</br>
-				性格开朗活泼、思维严谨、乐观豁达、容易相处，团队荣誉感强,此外有点骚外,小火车开的呜呜响。 </p>
+			<br class="para-w3-agile">本人热爱前端技术，对前端技术有浓厚兴趣，喜欢团队协作，有一定的自我约束和控制能力，以前学过美术，审美还可以，擅长做思维导图.</br>
+					有较强的自学能力, 对工作的责任心强, 严格要求完成任务, 做起事来有穿透力.</br>
+					性格安静随和，思维发散，容易相处，团队荣誉感强 。</p>
 
 			<!-- <div class="skills-bar">
 				<h4 class="title-w3ls">技术栈</h4>
@@ -210,6 +177,7 @@
 
 							</div>
 						</div>
+						
 						<div class='clear'></div>
 					</section>
 				</section>
@@ -224,15 +192,14 @@
 			<h4 class="title-w3ls">工作经验</h4>
 			<div class="work-info">
 				<div class="col-md-6 work-left">
-					<h4>2017/7 – 2019/6 <br>湖南长沙</h4>
+					<h4>2019/1 – 2019/9 <br>湖南长沙</h4>
 					</h4>
 				</div>
 				<div class="col-md-6 work-right">
 					<h5><span class="glyphicon glyphicon-briefcase"> </span> 长沙拓众网络科技有限公司</h5>
-					<p>长沙拓众网络科技有限公司是以网络技术、计算机信息技术的研发及技术咨询;文化活动的组织与策划;设计、制作、代理、发布国内各类广告;企业管理咨询;经济信息咨询;商务信息咨询;计算机系统集成;网络综合布线;企业营销策划;品牌策划;网页设计;服装、日用品、电子产品(不含电子出版物)、通讯器材(不含卫星电视广播地面接收设施)的销售。<i>(校企合作.)</i>
+					<p>长沙拓众网络科技有限公司是以网络技术、计算机信息技术的研发及技术咨询;文化活动的组织与策划;设计、制作、代理、发布国内各类广告;企业管理咨询;经济信息咨询;商务信息咨询;计算机系统集成;网络综合布线;企业营销策划;品牌策划;网页设计;<i>说白了,有活就干,反正是校企合作.</i>
 					</p>
-					<h6>担任岗位-- WEB前端中级开发工程师</h6>
-					&nbsp;&nbsp;
+					&nbsp;&nbsp;<h6>担任岗位-- WEB前端开发(中级)</h6>
 					<h6>工作内容 </h6>
 					<p> 1.参与多个不同项目的前端开发工作：包括后台管理系统，电商网站，小程序等；</br>
 						2.根据需求文档和UI提供的原型图实现页面效果与功能；</br>
@@ -244,25 +211,25 @@
 				<!-- <div class="clearfix"> </div> -->
 			</div>
 
-			
-			<!--<div class="work-info">
+
+			<div class="work-info">
 				<div class="col-md-6 work-right work-right2">
-					<h4>2017/3 – 2017/6 <br>湖南娄底 </h4>
+					<h4>2017/6 – 2018/12 <br>湖南娄底 </h4>
 				</div>
 				<div class="col-md-6 work-left work-left2">
 					<h5>娄底志邦网络科技有限公司 <span class="glyphicon glyphicon-briefcase"></span> </h5>
-					<P>娄底志邦网络科技有限公司是以计算机软硬件的研发、销售；网页样计、则作；兴牌策划、推广；计算机综合总线；企业营销策划；网站候样；招商代给；广告样计、制作(学校大门旁边的公司)
+					<P>娄底志邦网络科技有限公司是以计算机软硬件的研发、销售；网页样计、则作；兴牌策划、推广；计算机综合总线；企业营销策划；网站候样；招商代给；广告样计、制作(我们电脑老师的公司)
 					</P>
-					<h6>担任岗位-- WEB前端初级开发(闲时兼职)</h6>
+					<h6>担任岗位-- WEB前端开发(初级)</h6>
 					<h6>工作内容 </h6>
-					<p>初步负责公司项目组移动端和PC端的静态页面完成；</br>
+					<p>负责公司项目组移动端和PC端页面完成；</br>
 						协助团队共同商议网站优化方案，并保证兼容性和执行效率；</br>
-						切完图后与设计师合作完成网站小部分页面组件前端的特效；</br>
-						
+						与设计师合作完成网站页面前端的特效；</br>
+						与后台开发人员实现产品界面和功能； </p>
 				</div>
 				<div class="clearfix"> </div>
-		</div> -->
-	</div>
+			</div>
+		</div>
 	</div>
 	<!--//work-experience-->
 
@@ -270,7 +237,7 @@
 	<div class="projects" id="projects">
 		<div class="container">
 			<span class="about-top-w3"> 我最好的项目</span>
-			<h4 class="title-w3ls">补充特色项目</h4>
+			<h4 class="title-w3ls">特色项目</h4>
 
 			<div class="news-bottom">
 				<!-- --项目介绍 -->
@@ -279,11 +246,11 @@
 				<div class="news-one-wthree-agile" id="threes">
 					<div class="col-md-6 news-right">
 						<a href="#three">
-							<h4>1.小爱金融投资后台管理系统 (pc端)</h4>
+							<h4>1.仿某后台管理系统 (pc端)</h4>
 						</a>
 						<p class="para-w3-agile">
-							项目描述：这是<a href="http://118.126.117.130/#/index">小爱金融投资的后台管理系统(电脑端可以点)</a>
-							我和兄弟写着玩的,莫当真，目前他来运营,主要可以管理用户、信息管理、资金管理、投资管理、金融文章、资金数据等各种功能</br>
+							项目描述：这是链接:<a href="http://118.126.117.130/#/index">金融投资的后台管理系统</a>
+							我和兄弟写着玩的，主要可以管理用户、信息管理、资金管理、投资管理、金融文章、资金数据等各种功能</br>
 							工作责任描述：
 							负责项目后台登模、用户管理块设计工作，
 							完成 登陆和用户模块 的前端界面及核心交互逻辑设
@@ -304,7 +271,7 @@
 							<div class="lightbox-target" id="three">
 								<img src="images/p21.jpg" alt="" />
 								<p class="pop">项目介绍</br>
-									小爱金融投资公司的后台管理系统主要由九个大模块，十几个雄安模块组成。包括了用户列表、信息列表、个人信息管理、修改信息、资金流水、支付数据、、省份投资、区域投资、金融文章（发布+编辑+查看）、投资分布+项目分布
+									小爱金融投资公司的后台管理系统主要由九个大模块，十几个模块组成。包括了用户列表、信息列表、个人信息管理、修改信息、资金流水、支付数据、、省份投资、区域投资、金融文章（发布+编辑+查看）、投资分布+项目分布
 
 								</p>
 								<a class="lightbox-close" href="#threes"> </a>
@@ -327,9 +294,10 @@
 
 								<img src="images/p1.jpg" alt="" />
 								<p class="pop">享云购-生活帮官网（移动端）</br>
-									因为这是让我最气恼的项目</br>
+									这个项目放在这是有原因的,因为这是让我最遗憾的项目</br>
 
-									当初我们接了这个单,老大立马叫我放下手头的其他项目,帮他们公司赶这个项目的时候,这才做了几个模块啊,老大叫停.										他们就说要在1月3号上线,无语了,项目的都不完善就上线?嗯?为什么?
+									<span>当初我们接了这个单,老大立马叫我放下手头的其他项目,帮他们公司赶这个项目的时候,这才做了几个模块啊,叫停.有么有搞错啊!
+										他们就说要在1月3号上线,无语了..</span>
 
 								</p>
 								</p>
@@ -367,11 +335,9 @@
 							</a>
 							<div class="lightbox-target" id="two">
 								<img src="images/p31.jpg" alt="" />
-								<p class="pop">麻事外包服务平台（PC、移动端、APP）</br>
+								<p class="pop">（PC、移动端、APP）</br>
 
-									</br>项目介绍:这是一个服务于 企业用户、发包公司
-									和开发工室作的服务平台。因解决了企业因为本问题，不会因为一个项目去招一个团队和工作室找不到项目的问题。企业来到此平台发布项目需求/人力需求，发布招标书。投标人进行筛选，确定后停止招标，支付定金。作室用户中标后，过程中根据完成进度支付进度款，项目完成、客户验收后申请支付尾款。
-
+									</br>项目介绍:这项目简单,就不叙述了
 								</p>
 								<a class="lightbox-close" href="#twos"> </a>
 
@@ -382,19 +348,20 @@
 					</div>
 					<div class="col-md-6 news-right">
 						<a href="#two">
-							<h4>麻事外包服务平台（pc端）</h4>
+							<h4>快翻新家（pc端）</h4>
 						</a>
 						<p class="para-w3-agile">
-							<span>先说明一下:这是我们这帮伙计,接了学校创业协会的小活(挺有意思的,要拿去参赛),利用了周末时间做出了,..(全套设计和网页都写好了,可以让你们对外包公司有个全新的了解,源码在我的github上,自己找.)
-								</span></br>
-							项目介绍:这是一个服务于 企业用户、发包公司
-							和开发工室作的服务平台。</br>
-							工作责任描述：</br>
-							负责使用bootstrap进行页面基础构架；
-							负责前端响应式页面开发，部分功能模块实现，同时兼容手机端；
-							主要完成项目列表，阶段划分，报价单，支付页面的完成以及交互效果；</br>
 
-							开发技术：html、css3、js、jquery、 sprite、bootstrap、ajax、localStorage。</p>
+							项目介绍:这是一个移动互联网快速装修平台，专注于旧房翻新、维修安装、深度清洁服务，为用户提供家庭翻新维护服务，同时为家庭装修、维护、家居建材服务者提供市场商业机会。项目有首页、房屋翻新、小修小补、软装搭配、企业翻新、等功能模块。
+							工作内容：负责使用bootstrap进行页面基础构架；
+							1.在蓝湖上下载UI做好的原型图
+							2.使用html+css以及jquery实现页面的布局和简单的交互动画效果
+							3.使用javascript处理一些简单的逻辑
+							4.使用Ajax获取后台数据，页面渲染
+							5.采用了css3的新增特性，注重用户体验。
+							6.使用主体部分图片化处理，注重首屏优化，减少服务器压力，提高用户体验
+
+							开发技术：html+ css+ jquery+ js+ ajax</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -406,7 +373,7 @@
 	<!-- contact 留言 -->
 	<div class="contact" id="contact">
 		<div class="container">
-			<span class="about-top-w3">发送邮箱</span>
+			<span class="about-top-w3">发送邮件</span>
 			<h4 class="title-w3ls">联 系 我</h4>
 			<div class="col-md-5 contact-agileits-w3layouts">
 				<!-- <form action="mailto:778796395@qq.com" method="post" name='form' enctype="text/plain">
@@ -417,25 +384,27 @@
 					<input type="submit" id="tij" class="popup-btn popup-btn1" value="提交">
 				</form> -->
 				<ul class="email">
-						<li><input type="text" name="Name" placeholder="名字"></li>
-						<li><input type="text" name="Email" placeholder="邮箱"></li>
-						<li><input type="text" name="Number" placeholder="电话"></li>
-						<li class="message"><textarea name="message"  placeholder="留言"></textarea> </li>
-						<button class="btn" >提交</button>
-						
-						<a href="mailto" id="send"></a>
-					</ul>
+					<li><input type="text" name="Name" placeholder="名字"></li>
+					<li><input type="text" name="Email" placeholder="邮箱"></li>
+					<li><input type="text" name="Number" placeholder="电话"></li>
+					<li class="message"><textarea name="message" placeholder="留言"></textarea> </li>
+					<button class="btn">发送</button>
+
+					<a href="mailto" id="send"></a>
+				</ul>
 
 				<h5 class="sub">寻找我的方式</h5>
-				<p><span>地点</span> : 宝安区西丽</p>
+				<p><span>地点</span> : 宝安区兴东</p>
 				<p> <span>我滴手机</span> <a href="tel:15581155868">: 15581155868
-						<i class="fa fa-volume-control-phone" aria-hidden="true" style="margin-left: 1em"></i>&nbsp;点此拨打</p>
-				</a>
-					
-				<p><span>Email</span><a href="mailto:778796395@qq.com"> : 778796395@qq.com </br>
-						
+						<i class="fa fa-volume-control-phone" aria-hidden="true" style="margin-left: 1em"></i>&nbsp;点击拨打
 				</p>
-				<!--<p><i class="fa fa-warning" style="line-height: 20px;">&nbsp;注: &nbsp;电脑提交需安装Outlook,手机端 有相关 邮箱App.就能在线提交 留言给我.或最简单的直接电话扣我</i></p>-->
+				</a>
+
+				<p><span>Email</span><a href="mailto:778796395@qq.com"> : 778796395@qq.com </br>
+
+				</p>
+				<!-- <p><i class="fa fa-warning" style="line-height: 20px;">&nbsp;注: &nbsp;电脑的需安装Outlook,手机端 有
+						邮箱App(例如如QQ邮箱).才能发送 留言给我.或最简单的直接电话扣我</i></p> -->
 			</div>
 		</div>
 	</div>
@@ -445,22 +414,45 @@
 	<script src="js/bars.js"></script>
 	<!-- 发送邮件留言实现 -->
 	<script type="text/javascript">
-		function sendEmail(){
-		    var name=$("[name='Name']").val(),
-		        email=$("[name='Email']").val(),
-		        number=$("[name='Number']").val(),
-		        message=$("[name='message']").val(),
-		        body="My Name is: "+name+"%0a%0d"
-		            +"My Email Address is: "+email+"%0a%0d"
-		            +"My Phone Number is: "+number+"%0a%0d"
-		            +"Message:"+"%0a%0d"+message;
-		    $("#send").attr("href","mailto:778796395@qq.com?body="+body);
-		    document.getElementById("send").click();
+	jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+		(function ($) {
+				$(".menu-icon").on("click", function () {
+					$(this).toggleClass("open");
+					$(".container").toggleClass("nav-open");
+					$("nav ul li").toggleClass("animate");
+				});
+				$("#weixinimg").on("click", function () {
+
+					$("#weixinimg").fadeOut(500);
+				});
+				$("#weixin").on("click", function (e) {
+					e.preventDefault();
+					$("#weixinimg").fadeToggle(500);
+				});
+
+			})(jQuery);
+
+		function sendEmail() {
+			var name = $("[name='Name']").val(),
+				email = $("[name='Email']").val(),
+				number = $("[name='Number']").val(),
+				message = $("[name='message']").val(),
+				body = "My Name is: " + name + "%0a%0d"
+					+ "My Email Address is: " + email + "%0a%0d"
+					+ "My Phone Number is: " + number + "%0a%0d"
+					+ "Message:" + "%0a%0d" + message;
+			$("#send").attr("href", "mailto:778796395@qq.com?body=" + body);
+			document.getElementById("send").click();
 		}
 		// $(window).ready($(".btn").click(sendEmail))
 		$(window).ready(
-		    $(".btn").click(sendEmail)
-		);	
+			$(".btn").click(sendEmail)
+		);
 		// (function ($) {
 		// 	$("#tij").on("click", function () {
 		// 		console.log("aa");
@@ -492,7 +484,7 @@
 
 		// })(jQuery);
 	</script>
-	
+
 </body>
 
 </html>
