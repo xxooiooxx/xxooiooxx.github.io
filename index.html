@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>我的简历</title>
+	<title>简泽的简历</title>
 	<!-- for-mobile-apps部分 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,28 +13,12 @@
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- jsqury 导入-->
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<!-- //js -->
 	<link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
 	<link
 		href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
 		rel='stylesheet' type='text/css'>
 	<link href="http://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
-
-
-	<!-- start-smooth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-			});
-		});
-	</script>
-	<!-- start-smooth-scrolling -->
 </head>
 
 <body>
@@ -78,18 +62,16 @@
 				<!-- 社交按钮 -->
 				<div class="social-icons anmated wow bounceInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
 					<ul class="top-links">
-						<li><a	href="tencent://message/?uin=778796395&Menu=yes& Service=300&sigT=42a1e5347953b64c5ff3980f8a6e644d4b31456cb0b6ac6b27663a3c4dd0f4aa14a543b1716f9d45">
-							<i class="fa fa-qq"></i></i></a></li>
+						<li><a
+								href="tencent://message/?uin=778796395&Menu=yes& Service=300&sigT=42a1e5347953b64c5ff3980f8a6e644d4b31456cb0b6ac6b27663a3c4dd0f4aa14a543b1716f9d45">
+								<i class="fa fa-qq"></i></i></a></li>
 
 						<li style=" position: relative;"><a id="weixin" href="#">
-
 								<i class="fa fa-weixin"></i></i></a>
 							<img id="weixinimg" style=" width: 10em;
 						height: 10em; position: absolute; top:2.5em;left:-3em; display: none;z-index: 10;
 				  " src="images/webwxgetmsgimg.jpg" alt="">
 						</li>
-
-
 						<li><a href="https://blog.csdn.net/qq_25175641"><i class="fa fa-scribd"></i></a>
 						</li>
 						<li><a href="https://github.com/xxooiooxx"><i class="fa fa-github"></i></i></a></li>
@@ -145,7 +127,7 @@
 						<li>5、熟练使用 jQuery前端类库和 Ajax 交互技术进行与服务端交互；</li>
 						<li>6、熟练使用 Vue，以及Element UI,Vant组件库</li>
 						<li>7、熟练运用 git版本控制器进行项目部署；</li>
-						<li>8、对ES6语法有过了解、精通FONTAWSOME 、iconfont等字体图标库。</li>						
+						<li>8、对ES6语法有过了解、精通FONTAWSOME 、iconfont等字体图标库。</li>
 						<li>9、熟练使用mpvue+weui开发微信小程序;</li>
 					</ul>
 
@@ -154,26 +136,6 @@
 				<!-- <div class="clearfix"></div> -->
 			</div>
 		</div>
-		<script>
-			(function ($) {
-				$(".menu-icon").on("click", function () {
-					$(this).toggleClass("open");
-					$(".container").toggleClass("nav-open");
-					$("nav ul li").toggleClass("animate");
-				});
-				$("#weixinimg").on("click", function () {
-
-					$("#weixinimg").fadeOut(500);
-				});
-				$("#weixin").on("click", function (e) {
-					e.preventDefault();
-					$("#weixinimg").fadeToggle(500);
-				});
-
-			})(jQuery);
-
-		</script>
-
 	</div>
 
 	<!-- //banner -->
@@ -183,34 +145,9 @@
 			<span class="about-top-w3">我是谁?</span>
 			<h4 class="title-w3ls">关于我</h4>
 			<h5 class="sub">我自己的简要介绍</h5>
-			<p class="para-w3-agile">本人热爱前端技术，对前端技术有浓厚兴趣，喜欢团队协作，有一定的自我约束和控制能力，科班出生, 以前学过美术，审美还可以，擅长做思维导图.</br>
-					有较强的自学能力, 对工作的责任心强, 严格要求完成任务, 做起事来有穿透力.</br>
-					性格安静随和，思维发散，容易相处，团队荣誉感强 。</p>
-
-			<!-- <div class="skills-bar">
-				<h4 class="title-w3ls">技术栈</h4>
-				<section class='bar'>
-					<section class='wrap'>
-						<div class='wrap_right'>
-							<div class='bar_group'>
-								<div class='bar_group__bar thin' label='HTML5+CSS3 网站构建及优化' show_values='true'
-									tooltip='true' value='500'></div>
-								<div class='bar_group__bar thin' label='javaScript、jQuery前端类库、 Ajax 交互技术、nodejs接口编写'
-									show_values='true' tooltip='true' value='435'></div>
-								<div class='bar_group__bar thin' label='Vue全家桶' show_values='true' tooltip='true'
-									value='375'></div>
-								<div class='bar_group__bar thin' label='Bootstrap、element-ui、等前端主流框架、Mint-ui、mui移动前端库'
-									show_values='true' tooltip='true' value='545'></div>
-								<div class='bar_group__bar thin' label='webpack项目结构搭建、项目打包、小程序' show_values='true'
-									tooltip='true' value='326'></div>
-
-							</div>
-						</div>
-						
-						<div class='clear'></div>
-					</section>
-				</section>
-			</div> -->
+			<p class="para-w3-agile">本人热爱前端技术，对前端技术有浓厚兴趣，喜欢团队协作，有一定的自我约束和控制能力，科班出生, 以前学过美术，审美还可以，擅长做思维导图.<br/>
+				有较强的自学能力, 对工作的责任心强, 严格要求完成任务, 做起事来有穿透力.<br/>
+				性格安静随和，思维发散，容易相处，团队荣誉感强 。</p>
 		</div>
 	</div>
 	<!-- //about -->
@@ -221,7 +158,7 @@
 			<h4 class="title-w3ls">工作经验</h4>
 			<div class="work-info">
 				<div class="col-md-6 work-left">
-					<h4>2019/1 – 2019/9 <br>湖南长沙</h4>
+					<h4>2019/1 – 2019/9 <br/>湖南长沙</h4>
 					</h4>
 				</div>
 				<div class="col-md-6 work-right">
@@ -230,10 +167,10 @@
 					</p>
 					<h6 class="zhiwei">担任岗位-- WEB前端开发(中级)</h6>
 					<h6>工作内容 </h6>
-					<p> 1.参与多个不同项目的前端开发工作：包括后台管理系统，电商网站，小程序等；</br>
-						2.根据需求文档和UI提供的原型图实现页面效果与功能；</br>
-						3.负责公司现有项目和新项目的前端修改调试和开发工作；</br>
-						4.协助团队共同商议网站优化方案，并保证兼容性和执行效率； </br>
+					<p> 1.参与多个不同项目的前端开发工作：包括后台管理系统，电商网站，小程序等；<br/>
+						2.根据需求文档和UI提供的原型图实现页面效果与功能；<br/>
+						3.负责公司现有项目和新项目的前端修改调试和开发工作；<br/>
+						4.协助团队共同商议网站优化方案，并保证兼容性和执行效率； <br/>
 						5.配合后台开发人员完成数据接口的开发和调试
 					</p>
 				</div>
@@ -251,9 +188,9 @@
 					</P>
 					<h6 class="zhiwei">担任岗位-- WEB前端开发(初级)</h6>
 					<h6>工作内容 </h6>
-					<p>负责公司项目组移动端和PC端页面完成；</br>
-						协助团队共同商议网站优化方案，并保证兼容性和执行效率；</br>
-						与设计师合作完成网站页面前端的特效；</br>
+					<p>负责公司项目组移动端和PC端页面完成；<br/>
+						协助团队共同商议网站优化方案，并保证兼容性和执行效率；<br/>
+						与设计师合作完成网站页面前端的特效；<br/>
 						与后台开发人员实现产品界面和功能； </p>
 				</div>
 				<div class="clearfix"> </div>
@@ -279,7 +216,7 @@
 						</a>
 						<p class="para-w3-agile">
 							项目描述：这是链接:<a href="http://118.126.117.130/#/index">小爱金融投资的后台管理系统</a>
-							我和兄弟写着玩的，主要可以管理用户、信息管理、资金管理、投资管理、金融文章、资金数据等各种功能</br>
+							我和兄弟写着玩的，主要可以管理用户、信息管理、资金管理、投资管理、金融文章、资金数据等各种功能<br/>
 							工作责任描述：
 							负责项目后台登模、用户管理块设计工作，
 							完成 登陆和用户模块 的前端界面及核心交互逻辑设
@@ -287,8 +224,8 @@
 							+vuex 作为全局数据存储
 							+vue-router 作为单页面应用
 							+ axios来与前后端进行交互
-							+ echars 展示数据</br>
-							项目的优化</br>
+							+ echars 展示数据<br/>
+							项目的优化<br/>
 							开发技术：element-ui、vue-cli、vue-router、aioxs、moemnt.js、webpack .
 						</p>
 					</div>
@@ -299,7 +236,7 @@
 							</a>
 							<div class="lightbox-target" id="three">
 								<img src="images/p21.jpg" alt="" />
-								<p class="pop">项目介绍</br>
+								<p class="pop">项目介绍<br/>
 									小爱金融投资公司的后台管理系统主要由九个大模块，十几个模块组成。包括了用户列表、信息列表、个人信息管理、修改信息、资金流水、支付数据、、省份投资、区域投资、金融文章（发布+编辑+查看）、投资分布+项目分布
 
 								</p>
@@ -322,8 +259,8 @@
 							<div class="lightbox-target" id="one">
 
 								<img src="images/p1.jpg" alt="" />
-								<p class="pop">享云购-生活帮官网（移动端）</br>
-									这个项目放在这是有原因的,因为这是让我最遗憾的项目</br>
+								<p class="pop">享云购-生活帮官网（移动端）<br/>
+									这个项目放在这是有原因的,因为这是让我最遗憾的项目<br/>
 
 									<span>当初我们接了这个单,老大立马叫我放下手头的其他项目,帮他们公司赶这个项目的时候,这才做了几个模块啊,叫停.有么有搞错啊!
 										他们就说要在1月3号上线,无语了..</span>
@@ -344,13 +281,13 @@
 						<a href="#one">
 							<h4>享云购-生活帮官网（移动端）</h4>
 						</a>
-						<p class="para-w3-agile">项目描述：对公司业务的介绍公司地址、公司主营业务、以及线上APP下载链接。</br>
+						<p class="para-w3-agile">项目描述：对公司业务的介绍公司地址、公司主营业务、以及线上APP下载链接。<br/>
 							工作责任描述：
 							负责和项目经理交谈，了解网站的需求；
 							负责主页导航、轮播图、css动画等特效的开发；
 							负责关于我们部分模块编写；
 							完成用户交互效果；
-							解决浏览器兼容性问题；</br>
+							解决浏览器兼容性问题；<br/>
 							开发技术：vue-cli + vue2.0 + vue-router + axios + mui+ mint UI +less
 						</p>
 					</div>
@@ -359,10 +296,10 @@
 				<div class="news-one-wthree-agile" id="twos">
 					<div class="col-md-6 news-left">
 						<div class="biseller-column">
-							<a class="lightbox" >
+							<a class="lightbox">
 								<img src="images/p3.jpg" alt="" />
 							</a>
-							
+
 						</div>
 
 					</div>
@@ -379,7 +316,7 @@
 							3.使用javascript处理一些简单的逻辑
 							4.使用Ajax获取后台数据，页面渲染
 							5.采用了css3的新增特性，注重用户体验。
-							6.使用主体部分图片化处理，注重首屏优化，减少服务器压力，提高用户体验</br>
+							6.使用主体部分图片化处理，注重首屏优化，减少服务器压力，提高用户体验<br/>
 
 							开发技术：html+ css+ jquery+ js+ ajax</p>
 					</div>
@@ -388,10 +325,10 @@
 				<div class="news-one-wthree-agile" id="twos">
 					<div class="col-md-6 news-left">
 						<div class="biseller-column">
-							<a class="lightbox" >
+							<a class="lightbox">
 								<img src="images/p4.jpg" alt="" />
 							</a>
-							
+
 						</div>
 
 					</div>
@@ -401,12 +338,12 @@
 						</a>
 						<p class="para-w3-agile">
 
-							项目介绍:该小程序属于购物性质程序，主要针对人群是购买玉器的代理商，给玉器购买代理商提供一个购玉平台，该程序有首页、商城、资讯、证书，我的等模块。</br>
+							项目介绍:该小程序属于购物性质程序，主要针对人群是购买玉器的代理商，给玉器购买代理商提供一个购玉平台，该程序有首页、商城、资讯、证书，我的等模块。<br/>
 							工作责任描述：1.在wxml、wxss 文件中完成网页布局；
 							2.调用微信API 实现数据交互；
 							3.使用了weui和view里面的组件进行开发；
 							4.通过路由wx.navigateTo实现页面之间的跳转；
-							5.通过wx.request发送请求，并把响应回来的数据渲染出来；</br>
+							5.通过wx.request发送请求，并把响应回来的数据渲染出来；<br/>
 							开发技术：html+ css+ jquery+ js+ ajax</p>
 					</div>
 					<div class="clearfix"> </div>
@@ -445,20 +382,41 @@
 				</p>
 				</a>
 
-				<p><span>Email</span><a href="mailto:778796395@qq.com"> : 778796395@qq.com </br>
+				<p><span>Email</span><a href="mailto:778796395@qq.com"> : 778796395@qq.com <br/>
 
 				</p>
-				<!-- <p><i class="fa fa-warning" style="line-height: 20px;">&nbsp;注: &nbsp;电脑的需安装Outlook,手机端 有
-						邮箱App(例如如QQ邮箱).才能发送 留言给我.或最简单的直接电话扣我</i></p> -->
+		
 			</div>
 		</div>
 	</div>
-	</div>
-	<!-- //about -->
-
+	</div><!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bars.js"></script>
-	<!-- 发送邮件留言实现 -->
 	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+		(function ($) {
+			$(".menu-icon").on("click", function () {
+				$(this).toggleClass("open");
+				$(".container").toggleClass("nav-open");
+				$("nav ul li").toggleClass("animate");
+			});
+			$("#weixinimg").on("click", function () {
+
+				$("#weixinimg").fadeOut(500);
+			});
+			$("#weixin").on("click", function (e) {
+				e.preventDefault();
+				$("#weixinimg").fadeToggle(500);
+			});
+
+		})(jQuery);
 		function sendEmail() {
 			var name = $("[name='Name']").val(),
 				email = $("[name='Email']").val(),
