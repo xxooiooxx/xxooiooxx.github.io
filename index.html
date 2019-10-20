@@ -26,6 +26,15 @@
 	<!-- start-smooth-scrolling -->
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
 </head>
 
 <body>
@@ -145,6 +154,26 @@
 				<!-- <div class="clearfix"></div> -->
 			</div>
 		</div>
+		<script>
+			(function ($) {
+				$(".menu-icon").on("click", function () {
+					$(this).toggleClass("open");
+					$(".container").toggleClass("nav-open");
+					$("nav ul li").toggleClass("animate");
+				});
+				$("#weixinimg").on("click", function () {
+
+					$("#weixinimg").fadeOut(500);
+				});
+				$("#weixin").on("click", function (e) {
+					e.preventDefault();
+					$("#weixinimg").fadeToggle(500);
+				});
+
+			})(jQuery);
+
+		</script>
+
 	</div>
 
 	<!-- //banner -->
@@ -414,29 +443,6 @@
 	<script src="js/bars.js"></script>
 	<!-- 发送邮件留言实现 -->
 	<script type="text/javascript">
-	jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-			});
-		});
-		(function ($) {
-				$(".menu-icon").on("click", function () {
-					$(this).toggleClass("open");
-					$(".container").toggleClass("nav-open");
-					$("nav ul li").toggleClass("animate");
-				});
-				$("#weixinimg").on("click", function () {
-
-					$("#weixinimg").fadeOut(500);
-				});
-				$("#weixin").on("click", function (e) {
-					e.preventDefault();
-					$("#weixinimg").fadeToggle(500);
-				});
-
-			})(jQuery);
-
 		function sendEmail() {
 			var name = $("[name='Name']").val(),
 				email = $("[name='Email']").val(),
