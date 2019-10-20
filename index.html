@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>简泽的简历</title>
-	<!-- for-mobile-apps部分 -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="" />
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+<title>简泽的简历</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!-- //for-mobile-apps部分 -->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/font-awesome.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- //js -->
-	<link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
-	<link
-		href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
-		rel='stylesheet' type='text/css'>
-	<link href="http://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
-</head>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 
+
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smooth-scrolling -->
+</head>
+	
 <body>
-	<!-- banner -->
+<!-- banner -->
 	<div class="banner-figures">
 		<div class="banner">
 			<div class="container banner-drop">
@@ -32,40 +45,35 @@
 					</div>
 					<div class="header-right">
 						<nav>
-							<ul>
-								<li class="active">
-									<a href="index.html" class="active"><span>主页</span></a>
-								</li>
-								<li>
-									<a href="#about" class="scroll"><span>关于</span></a>
-								</li>
-								<li>
-									<a href="#experience" class="scroll"><span>工作经验</span></a>
-								</li>
-								<li>
-									<a href="#projects" class="scroll"><span>项目</span></a>
-								</li>
-								<li>
-									<a href="#contact" class="scroll"><span>联系我</span></a>
-								</li>
-							</ul>
+						  <ul>
+							<li class="active">
+								<a href="index.html" class="active"><span>主页</span></a>
+							</li>
+							<li>
+								<a href="#about" class="scroll"><span>关于</span></a>
+							</li>
+							<li>
+								<a href="#experience" class="scroll"><span>工作经验</span></a>
+							</li>
+							<li>
+								<a href="#projects" class="scroll"><span>项目</span></a>
+							</li>
+							<li>
+								<a href="#contact" class="scroll"><span>联系我</span></a>
+							</li>
+						  </ul>
 						</nav>
-						<div class="menu-icon animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="800ms">
-							<span></span></div>
+						<div class="menu-icon animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="800ms"><span></span></div>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-				<div class="name">
+				<div class="name" >
 					<h2>简泽</h2>
-					<p style="color: antiquewhite"> Web Designer & Developer</p>
+					<p> Web 工程师 & 设计师</p>
 				</div>
-				<!-- 社交按钮 -->
-				<div class="social-icons anmated wow bounceInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
+				<div class="social-icons animated wow bounceInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
 					<ul class="top-links">
-						<li><a
-								href="tencent://message/?uin=778796395&Menu=yes& Service=300&sigT=42a1e5347953b64c5ff3980f8a6e644d4b31456cb0b6ac6b27663a3c4dd0f4aa14a543b1716f9d45">
-								<i class="fa fa-qq"></i></i></a></li>
-
+						<li><a href="tencent://message/?uin=778796395&Menu=yes& Service=300&sigT=42a1e5347953b64c5ff3980f8a6e644d4b31456cb0b6ac6b27663a3c4dd0f4aa14a543b1716f9d45""><i class="fa fa-qq"></i></a></li>
 						<li style=" position: relative;"><a id="weixin" href="#">
 								<i class="fa fa-weixin"></i></i></a>
 							<img id="weixinimg" style=" width: 10em;
@@ -76,30 +84,30 @@
 						</li>
 						<li><a href="https://github.com/xxooiooxx"><i class="fa fa-github"></i></i></a></li>
 					</ul>
+					</ul>
 				</div>
 			</div>
-			<div class="banner-btm-grid-w3ls">
-				<div class="banner-left-wthree ">
-					<img src="images/banner-btm.jpg" alt=" " class="img-responsive">
-					<ul class="address">
-
-						<li>
+							<div class="banner-btm-grid-w3ls">
+		<div class="banner-left-wthree">
+			<img src="images/banner-btm.jpg" alt=" " class="img-responsive">
+			<ul class="address">
+					
+					<li>
 							<ul class="address-text">
-								<li><b>名字</b></li>
-								<li>: 简泽</li>
+								<li><b>NAME</b></li>
+								<li>: I'M 简泽</li>
 							</ul>
 						</li>
-
 						<li>
 							<ul class="address-text">
-								<li><b> 专业</b></li>
+								<li><b>专业</b></li>
 								<li>: 软件技术</li>
 							</ul>
 						</li>
 						<li>
 							<ul class="address-text">
-								<li><b>电话</b></li>
-								<li><a href="tel:15581155868">: 15581155868</a></li>
+								<li><b>电话 </b></li>
+								<li>: 15581155868</li>
 							</ul>
 						</li>
 						<li>
@@ -114,13 +122,13 @@
 								<li>：Web前端</li>
 							</ul>
 						</li>
-
+						
 					</ul>
-				</div>
-				<div class="banner-right-w3-agileits">
-					专 业 技 能
+		</div>
+		<div class="banner-right-w3-agileits">
+		专 业 技 能
 					<ul class="address">
-						<li>1、精通HTML5+CSS3 网站构建及优化，能够快速精确还原设计图；</li>
+						<li>1、精通HTMLh 5+CSS3 网站构建及优化，能够快速精确还原设计图；</li>
 						<li>2、熟悉使用原生 javaScript，能够使用 js 进行页面内复杂逻辑的处理；</li>
 						<li>3、会使用sass、less等css预编译技术。</li>
 						<li>4、熟练使用 Bootstrap等前端主流框架和swiper等插件，响应式开发；</li>
@@ -130,42 +138,66 @@
 						<li>8、对ES6语法有过了解、精通FONTAWSOME 、iconfont等字体图标库。</li>
 						<li>9、熟练使用mpvue+weui开发微信小程序;</li>
 					</ul>
-
-				</div>
-
-				<!-- <div class="clearfix"></div> -->
-			</div>
 		</div>
+		<div class="clearfix"></div>
+	</div>
+		</div>
+			<script>
+				(function($){
+				  $(".menu-icon").on("click", function(){
+						$(this).toggleClass("open");
+						$(".container").toggleClass("nav-open");
+						$("nav ul li").toggleClass("animate");
+				  });
+				  
+				})(jQuery);
+			</script>
+		
 	</div>
 
-	<!-- //banner -->
-	<!-- about -->
-	<div class="about" id="about">
-		<div class="container">
-			<span class="about-top-w3">我是谁?</span>
-			<h4 class="title-w3ls">关于我</h4>
-			<h5 class="sub">我自己的简要介绍</h5>
-			<p class="para-w3-agile">本人热爱前端技术，对前端技术有浓厚兴趣，喜欢团队协作，有一定的自我约束和控制能力，科班出生, 以前学过美术，审美还可以，擅长做思维导图.<br/>
-				有较强的自学能力, 对工作的责任心强, 严格要求完成任务, 做起事来有穿透力.<br/>
-				性格安静随和，思维发散，容易相处，团队荣誉感强 。</p>
+<!-- //banner -->
+<!-- about -->
+<div class="about" id="about">
+	<div class="container">
+		<span class="about-top-w3">我是谁?</span>
+		<h4 class="title-w3ls">About Me</h4>
+		<h5 class="sub">我自己的简要介绍</h5>
+		<p class="para-w3-agile">本人热爱前端技术，对前端技术有浓厚兴趣，喜欢团队协作，有一定的自我约束和控制能力，科班出生, 以前学过美术，审美还可以，擅长做思维导图.
+				</p>
+		<p class="para-w3-agile">有较强的自学能力, 对工作的责任心强, 严格要求完成任务, 做起事来有穿透力.
+				性格安静随和，思维发散，容易相处，团队荣誉感强 。 </p>
+		<div class="skills-bar">
+		<h4 class="title-w3ls">My Skills</h4>
+			<section class='bar'>
+				<section class='wrap'>
+					<div class='wrap_right'>
+					  <div class='bar_group'>
+						<div class='bar_group__bar thin' label='jQuery' show_values='true' tooltip='true' value='343'></div>
+						<div class='bar_group__bar thin' label='AJAX' show_values='true' tooltip='true' value='235'></div>
+						<div class='bar_group__bar thin' label='Html+css' show_values='true' tooltip='true' value='675'></div>
+						<div class='bar_group__bar thin' label='Vue' show_values='true' tooltip='true' value='456'></div>
+						<div class='bar_group__bar thin' label='小程序' show_values='true' tooltip='true' value='245'></div>
+						</div>
+					</div>
+					<div class='clear'></div>
+				</section>
+			</section>
 		</div>
 	</div>
-	<!-- //about -->
-	<!--work-experience-->
+</div>
+<!-- //about -->
+<!--work-experience-->
 	<div id="experience" class="experience">
 		<div class="container">
-			<span class="about-top-w3">前端开发工程师</span>
+		<span class="about-top-w3">前端开发工程师</span>
 			<h4 class="title-w3ls">工作经验</h4>
-			<div class="work-info">
-				<div class="col-md-6 work-left">
-					<h4>2019/1 – 2019/9 <br/>湖南长沙</h4>
-					</h4>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2018/11 – 2019/9 湖南长沙</h4>
 				</div>
-				<div class="col-md-6 work-right">
+				<div class="col-md-6 work-right"> 
 					<h5><span class="glyphicon glyphicon-briefcase"> </span> 长沙拓众网络科技有限公司</h5>
-					<p>长沙拓众网络科技有限公司是以网络技术、计算机信息技术的研发及技术咨询;文化活动的组织与策划;设计、制作、代理、发布国内各类广告;企业管理咨询;经济信息咨询;商务信息咨询;计算机系统集成;网络综合布线;企业营销策划;品牌策划;网页设计.
-					</p>
-					<h6 class="zhiwei">担任岗位-- WEB前端开发(中级)</h6>
+					<p>长沙拓众网络科技有限公司是以网络技术、计算机信息技术的研发及技术咨询;文化活动的组织与策划;设计、制作、代理、发布国内各类广告;企业管理咨询;经济信息咨询;商务信息咨询;计算机系统集成;网络综合布线;企业营销策划;品牌策划;网页设计. </p>
 					<h6>工作内容 </h6>
 					<p> 1.参与多个不同项目的前端开发工作：包括后台管理系统，电商网站，小程序等；<br/>
 						2.根据需求文档和UI提供的原型图实现页面效果与功能；<br/>
@@ -174,19 +206,15 @@
 						5.配合后台开发人员完成数据接口的开发和调试
 					</p>
 				</div>
-				<!-- <div class="clearfix"> </div> -->
+				<div class="clearfix"> </div>
 			</div>
-
-
-			<div class="work-info">
-				<div class="col-md-6 work-right work-right2">
-					<h4>2017/6 – 2018/12 <br>湖南娄底 </h4>
+			<div class="work-info"> 
+				<div class="col-md-6 work-right work-right2"> 
+					<h4>2017/6 – 2018/8  湖南娄底</h4>
 				</div>
-				<div class="col-md-6 work-left work-left2">
-					<h5>娄底志邦网络科技有限公司 <span class="glyphicon glyphicon-briefcase"></span> </h5>
-					<P>娄底志邦网络科技有限公司是以计算机软硬件的研发、销售；网页样计、则作；兴牌策划、推广；计算机综合总线；企业营销策划；网站候样；招商代给；广告样计、制作(校企合作,在校旁边)
-					</P>
-					<h6 class="zhiwei">担任岗位-- WEB前端开发(初级)</h6>
+				<div class="col-md-6 work-left work-left2"> 
+					<h5> 娄底志邦网络科技有限公司 <span class="glyphicon glyphicon-briefcase"> </span></h5>
+					<p>娄底志邦网络科技有限公司是以计算机软硬件的研发、销售；网页样计、则作；兴牌策划、推广；计算机综合总线；企业营销策划；网站候样；招商代给；广告样计、制作(校企合作,在校旁边) </p>
 					<h6>工作内容 </h6>
 					<p>负责公司项目组移动端和PC端页面完成；<br/>
 						协助团队共同商议网站优化方案，并保证兼容性和执行效率；<br/>
@@ -195,177 +223,154 @@
 				</div>
 				<div class="clearfix"> </div>
 			</div>
+			
+			</div>
 		</div>
 	</div>
 	<!--//work-experience-->
+<!-- projects -->
+<div class="projects" id="projects">
+	<div class="container">
+	<span class="about-top-w3">我做过的项目<</span>
+		<h4 class="title-w3ls">特色项目</h4>
+		<div class="news-bottom">
+				<div class="news-one-wthree-agile" id="oneA">
+					<div class="col-md-6 news-left" >
+						        <div class="biseller-column" >
+										<a class="lightbox" href="#one">
+											<img src="images/p1.jpg" alt=""/>
+										</a> 
+										<div class="lightbox-target" id="one">
+										 <img src="images/p1.jpg" alt=""/>
+										 <p class="pop">工作责任描述：
+											负责和项目经理交谈，了解网站的需求；
+											负责主页导航、轮播图、css动画等特效的开发；
+											负责关于我们部分模块编写；
+											完成用户交互效果；
+											解决浏览器兼容性问题</p>
+										   <a class="lightbox-close" href="#oneA"> </a>
+											
+											<div class="clearfix"> </div>
+											
+										</div>
+							   </div>
 
-	<!-- projects项目 -->
-	<div class="projects" id="projects">
-		<div class="container">
-			<span class="about-top-w3"> 我最好的项目</span>
-			<h4 class="title-w3ls">特色项目</h4>
-
-			<div class="news-bottom">
-				<!-- --项目介绍 -->
-
-				<!-- 第一个 -->
-				<div class="news-one-wthree-agile" id="threes">
-					<div class="col-md-6 news-right">
-						<a href="#three">
-							<h4>1.仿某后台管理系统 (pc端)</h4>
-						</a>
+					</div>	
+					<div class="col-md-6 news-right"> 
+					<a href="#one"><h4>享云购-生活帮官网（移动端）</h4></a>
 						<p class="para-w3-agile">
-							项目描述：这是链接:<a href="http://118.126.117.130/#/index">小爱金融投资的后台管理系统</a>
-							我和兄弟写着玩的，主要可以管理用户、信息管理、资金管理、投资管理、金融文章、资金数据等各种功能<br/>
-							工作责任描述：
-							负责项目后台登模、用户管理块设计工作，
-							完成 登陆和用户模块 的前端界面及核心交互逻辑设
-							使用 element-ui进行搭建项目结+
-							+vuex 作为全局数据存储
-							+vue-router 作为单页面应用
-							+ axios来与前后端进行交互
-							+ echars 展示数据<br/>
-							项目的优化<br/>
-							开发技术：element-ui、vue-cli、vue-router、aioxs、moemnt.js、webpack .
+							
+							项目描述：链接本地各大商家,提供在线购买商品,家政服务,教育等...
+								这个项目其实我是不想放出来的,当初我们接了这个单,老大立马叫我放下手头的其他项目,帮他们公司赶这个项目的时候,这才做了几个模块就上线,无语了.直到后面他们公司传出来的丑闻,噢!难怪.
+								<br/>负责模块：共享技能模块、任务大厅模块、跑腿代办模块。	
+								<br/>开发技术：js、jquery、bootstrap、ajax、css3、less、css sprite。
 						</p>
-					</div>
-					<div class="col-md-6 news-left">
-						<div class="biseller-column">
-							<a class="lightbox" href="#three">
-								<img src="images/p2.jpg" alt="" />
-							</a>
-							<div class="lightbox-target" id="three">
-								<img src="images/p21.jpg" alt="" />
-								<p class="pop">项目介绍<br/>
-									小爱金融投资公司的后台管理系统主要由九个大模块，十几个模块组成。包括了用户列表、信息列表、个人信息管理、修改信息、资金流水、支付数据、、省份投资、区域投资、金融文章（发布+编辑+查看）、投资分布+项目分布
-
-								</p>
-								<a class="lightbox-close" href="#threes"> </a>
-
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-
-					</div>
-					<div class="clearfix"> </div>
+					</div>	
+					<div class="clearfix"> </div>	
 				</div>
-				<div class="news-one-wthree-agile" id="ones">
+				
+			  <div class="news-one-wthree-agile" id="towA">
 					<div class="col-md-6 news-left">
-						<div class="biseller-column">
-							<a class="lightbox" href="#one">
-								<img src="images/p1.jpg" alt="" />
-							</a>
-							<!-- 弹框介绍 -->
-							<div class="lightbox-target" id="one">
-
-								<img src="images/p1.jpg" alt="" />
-								<p class="pop">享云购-生活帮官网（移动端）<br/>
-									这个项目放在这是有原因的,因为这是让我最遗憾的项目<br/>
-
-									<span>当初我们接了这个单,老大立马叫我放下手头的其他项目,帮他们公司赶这个项目的时候,这才做了几个模块啊,叫停.有么有搞错啊!
-										他们就说要在1月3号上线,无语了..</span>
-
-								</p>
-								</p>
-								<a class="lightbox-close" href="#ones"> </a>
-
-								<div class="clearfix"> </div>
-
-							</div>
-						</div>
-
-					</div>
-
-					<!-- 第二个项目 内容文本 -->
-					<div class="col-md-6 news-right">
-						<a href="#one">
-							<h4>享云购-生活帮官网（移动端）</h4>
-						</a>
-						<p class="para-w3-agile">项目描述：对公司业务的介绍公司地址、公司主营业务、以及线上APP下载链接。<br/>
-							工作责任描述：
-							负责和项目经理交谈，了解网站的需求；
-							负责主页导航、轮播图、css动画等特效的开发；
-							负责关于我们部分模块编写；
-							完成用户交互效果；
-							解决浏览器兼容性问题；<br/>
-							开发技术：vue-cli + vue2.0 + vue-router + axios + mui+ mint UI +less
-						</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="news-one-wthree-agile" id="twos">
-					<div class="col-md-6 news-left">
-						<div class="biseller-column">
-							<a class="lightbox">
-								<img src="images/p3.jpg" alt="" />
-							</a>
-
-						</div>
-
-					</div>
-					<div class="col-md-6 news-right">
-						<a href="#two">
-							<h4>快翻新家（pc端）</h4>
-						</a>
-						<p class="para-w3-agile">
-
-							项目介绍:这是一个移动互联网快速装修平台，专注于旧房翻新、维修安装、深度清洁服务，为用户提供家庭翻新维护服务，同时为家庭装修、维护、家居建材服务者提供市场商业机会。项目有首页、房屋翻新、小修小补、软装搭配、企业翻新、等功能模块。
-							工作责任描述：：负责使用bootstrap进行页面基础构架；
+							<div class="biseller-column" >
+										<a class="lightbox" href="#two">
+											<img src="images/p3.jpg" alt=""/>
+										</a> 
+										<div class="lightbox-target" id="two">
+										 <img src="images/p3.jpg" alt=""/>
+										 <p class="pop">工作责任描述：：负责使用bootstrap进行页面基础构架；
 							1.在蓝湖上下载UI做好的原型图
 							2.使用html+css以及jquery实现页面的布局和简单的交互动画效果
 							3.使用javascript处理一些简单的逻辑
 							4.使用Ajax获取后台数据，页面渲染
 							5.采用了css3的新增特性，注重用户体验。
-							6.使用主体部分图片化处理，注重首屏优化，减少服务器压力，提高用户体验<br/>
+							6.使用主体部分图片化处理，注重首屏优化，减少服务器压力，提高用户体验</p>
+										   <a class="lightbox-close" href="#towA"> </a>
+											
+											<div class="clearfix"> </div>
+										</div>
+							</div>
 
-							开发技术：html+ css+ jquery+ js+ ajax</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="news-one-wthree-agile" id="twos">
+					</div>	
+					<div class="col-md-6 news-right"> 
+					<a href="#two"><h4>快翻新家（pc端）</h4></a>
+						<p class="para-w3-agile">项目介绍:这是一个移动互联网快速装修平台，专注于旧房翻新、维修安装、深度清洁服务，为用户提供家庭翻新维护服务，同时为家庭装修、维护、家居建材服务者提供市场商业机会。项目有首页、房屋翻新、小修小补、软装搭配、企业翻新、等功能模块。<br/>
+							负责的模块:首页、房屋翻新、小修小补
+							开发技术：html+ css+ jquery+ js+ ajax</p>	
+					</div>	
+					<div class="clearfix"> </div>	
+				</div>	
+				<div class="news-one-wthree-agile" >
+					<div class="col-md-6 news-right" id="#fourA"> 
+						<a href="#four"><h4>天润之玉商城(小程序)</h4></a>
+						<p class="para-w3-agile">项目介绍:该小程序属于购物性质程序，主要针对人群是购买玉器的代理商，给玉器购买代理商提供一个购玉平台，该程序有首页、商城、资讯、证书，我的等模块。<br/>负责模块：首页、资讯、证书、商品详情模块开发。<br/>技术栈：html+css+ npvue + vuex + 微信小程序 官方提供的方法/框架/API/</p>	
+					</div>	
 					<div class="col-md-6 news-left">
-						<div class="biseller-column">
-							<a class="lightbox">
-								<img src="images/p4.jpg" alt="" />
-							</a>
-
-						</div>
-
-					</div>
-					<div class="col-md-6 news-right">
-						<a href="#two">
-							<h4>快翻新家（pc端）</h4>
-						</a>
-						<p class="para-w3-agile">
-
-							项目介绍:该小程序属于购物性质程序，主要针对人群是购买玉器的代理商，给玉器购买代理商提供一个购玉平台，该程序有首页、商城、资讯、证书，我的等模块。<br/>
-							工作责任描述：1.在wxml、wxss 文件中完成网页布局；
+						 <div class="biseller-column" id="fourA">
+										<a class="lightbox" href="#four">
+											<img src="images/p4.jpg" alt=""/>
+										</a> 
+										<div class="lightbox-target" id="four">
+										 <img src="images/p4.jpg" alt=""/>
+										 <p class="pop">工作责任描述：1.在wxml、wxss 文件中完成网页布局；
 							2.调用微信API 实现数据交互；
 							3.使用了weui和view里面的组件进行开发；
 							4.通过路由wx.navigateTo实现页面之间的跳转；
-							5.通过wx.request发送请求，并把响应回来的数据渲染出来；<br/>
-							开发技术：html+ css+ jquery+ js+ ajax</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
+							5.通过wx.request发送请求，并把响应回来的数据渲染出来；</p>
+										   <a class="lightbox-close" href="#fourA"> </a>
+											
+											<div class="clearfix"> </div>
+										</div>
+							</div>
+
+					</div>						
+					<div class="clearfix"> </div>	
+				</div>	
+				<div class="news-one-wthree-agile" id="threeA">
+						<div class="col-md-6 news-right"> 
+							<a href="#three"><h4>小爱金融投资的后台管理系统</h4></a>
+							<p class="para-w3-agile">
+							项目描述：这是链接:<a href="http://118.126.117.130/#/index">小爱金融投资的后台管理系统</a>
+								我和兄弟仿写的另一个后台管理系统，主要可以管理用户、信息管理、资金管理、投资管理、金融文章、资金数据等各种功能<br/>
+								开发技术：vue-cli + vue2.0 + vue-router + axios + mui+ mint UI +less
+							</p>	
+						</div>	
+						<div class="col-md-6 news-left">
+							 <div class="biseller-column" >
+											<a class="lightbox" href="#three">
+												<img src="images/p2.jpg" alt=""/>
+											</a> 
+											<div class="lightbox-target" id="three">
+											 <img src="images/p2.jpg" alt=""/>
+											 <p class="pop">
+								工作责任描述：
+								负责项目后台登模、用户管理块设计工作，
+								完成 登陆和用户模块 的前端界面及核心交互逻辑设
+								使用 element-ui进行搭建项目结+
+								+vuex 作为全局数据存储
+								+vue-router 作为单页面应用
+								+ axios来与前后端进行交互
+								+ echars 展示数据<br/>
+								项目的优化<br/></p>
+											   <a class="lightbox-close" href="#threeA"> </a>
+												
+												<div class="clearfix"> </div>
+											</div>
+								</div>
+	
+						</div>						
+						<div class="clearfix"> </div>	
+					</div>			
+								
 	</div>
-	<!-- //projects -->
-	<!-- contact 留言 -->
-	<div class="contact" id="contact">
-		<div class="container">
-			<span class="about-top-w3">发送邮件</span>
-			<h4 class="title-w3ls">联 系 我</h4>
-			<div class="col-md-5 contact-agileits-w3layouts">
-				<!-- <form action="mailto:778796395@qq.com" method="post" name='form' enctype="text/plain">
-					<input type="text" name="Your Name" placeholder="名字" required="" />
-					<input type="text" name="Your Email" placeholder="邮箱" required="" />
-					<input type="text" Name="Phone Number" placeholder="电话" required="" />
-					<textarea name="Message" placeholder="留言" required></textarea>
-					<input type="submit" id="tij" class="popup-btn popup-btn1" value="提交">
-				</form> -->
-				<ul class="email">
+</div>
+<!-- //projects -->
+<!-- contact -->
+<div class="contact" id="contact">
+	<div class="container">
+	<span class="about-top-w3">发送邮件</span>
+		<h4 class="title-w3ls">联 系 我</h4>
+		<div class="col-md-5 contact-agileits-w3layouts">
+		<ul class="email">
 					<li><input type="text" name="Name" placeholder="名字"></li>
 					<li><input type="text" name="Email" placeholder="邮箱"></li>
 					<li><input type="text" name="Number" placeholder="电话"></li>
@@ -385,39 +390,47 @@
 				<p><span>Email</span><a href="mailto:778796395@qq.com"> : 778796395@qq.com <br/>
 
 				</p>
-		
-			</div>
+		</div>
+
+	</div>
+</div>
+<!-- //about -->
+
+	<div class="footer">
+		<div class="container">
+			<p>相信如果你看到这里,决定还不错,请你给我一个面试邀约.来按这><a target="_blank" href="tel:15581155868"><i class="fa fa-volume-control-phone" aria-hidden="true" style="margin-left: 1em"></i></a></p>
 		</div>
 	</div>
-	</div><!-- start-smooth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bars.js"></script>
+<!-- //footer -->
+<script src="js/bars.js"></script>
+
+<!-- here stars scrolling icon -->
 	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
+	 jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
 				event.preventDefault();
 				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
 			});
 		});
-		(function ($) {
-			$(".menu-icon").on("click", function () {
-				$(this).toggleClass("open");
-				$(".container").toggleClass("nav-open");
-				$("nav ul li").toggleClass("animate");
-			});
-			$("#weixinimg").on("click", function () {
+	(function ($) {
+				$(".menu-icon").on("click", function () {
+					$(this).toggleClass("open");
+					$(".container").toggleClass("nav-open");
+					$("nav ul li").toggleClass("animate");
+				});
+				$("#weixinimg").on("click", function () {
 
-				$("#weixinimg").fadeOut(500);
-			});
-			$("#weixin").on("click", function (e) {
-				e.preventDefault();
-				$("#weixinimg").fadeToggle(500);
-			});
+					$("#weixinimg").fadeOut(500);
+				});
+				$("#weixin").on("click", function (e) {
+					e.preventDefault();
+					$("#weixinimg").fadeToggle(500);
+				});
 
-		})(jQuery);
-		function sendEmail() {
+			})(jQuery);
+   
+
+function sendEmail() {
 			var name = $("[name='Name']").val(),
 				email = $("[name='Email']").val(),
 				number = $("[name='Number']").val(),
@@ -432,39 +445,9 @@
 		// $(window).ready($(".btn").click(sendEmail))
 		$(window).ready(
 			$(".btn").click(sendEmail)
-		);
-		// (function ($) {
-		// 	$("#tij").on("click", function () {
-		// 		console.log("aa");
-		// 		var args = [];
-		// 		if (typeof subject !== 'undefined') {
-		// 			args.push('subject=' + encodeURIComponent('主题内容'));
-		// 		}
-		// 		var name = $("input[name='Your Name']").val();
-		// 		var iphone = $("input[name='Phone Number']").val();
-		// 		var Email = $("input[name='Your Email']").val();
-		// 		var Message = $("input[name='Message']").val();
-		// 		// var body = name + "\n" + iphone + "\n" + Email + "\n" + Message
-		// 		var body="My Name is: "+name+"%0a%0d"
-		//             +"My Email Address is: "+Email+"%0a%0d"
-		//             +"My Phone Number is: "+iphone+"%0a%0d"
-		//             +"Message:"+"%0a%0d"+Message;
-		// 		if (typeof body !== 'undefined') {
-		// 			args.push('body=' + encodeURIComponent(body))
-		// 		}
-
-		// 		var url = 'mailto:' + encodeURIComponent('778796395@qq.com');
-		// 		if (args.length > 0) {
-		// 			url += '?' + args.join('&');
-		// 		}
-		// 		console.log(url);
-		// 		window.location = url;
-		// 		return url;
-		// 	});
-
-		// })(jQuery);
+		);				
+			});
 	</script>
-
+<!-- //here ends scrolling icon -->
 </body>
-
 </html>
