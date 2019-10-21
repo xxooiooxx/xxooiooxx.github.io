@@ -23,22 +23,29 @@
 <!-- start-smooth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
-
+<script type="text/javascript">
+	jQuery(document).ready(function ($) {
+		$(".scroll").click(function (event) {
+			event.preventDefault();
+			$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+		});
+	});
+</script>
 <!-- start-smooth-scrolling -->
 </head>
 	
 <body>
 <!-- banner -->
-	<div class="banner-figures">
-		<div class="banner">
-			<div class="container banner-drop">
-				<div class="header">
-					<div class="header-left logo">
-						<h1><a href="index.html">前端开发工程师</a></h1>
-					</div>
-					<div class="header-right">
-						<nav>
-						  <ul>
+<div class="banner-figures">
+	<div class="banner">
+		<div class="container banner-drop">
+			<div class="header">
+				<div class="header-left logo">
+					<h1><a href="index.html">前端开发工程师</a></h1>
+				</div>
+				<div class="header-right">
+					<nav>
+						<ul>
 							<li class="active">
 								<a href="index.html" class="active"><span>主页</span></a>
 							</li>
@@ -54,12 +61,13 @@
 							<li>
 								<a href="#contact" class="scroll"><span>联系我</span></a>
 							</li>
-						  </ul>
-						</nav>
-						<div class="menu-icon animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="800ms"><span></span></div>
-					</div>
-					<div class="clearfix"> </div>
+						</ul>
+					</nav>
+					<div class="menu-icon animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="800ms">
+						<span></span></div>
 				</div>
+				<div class="clearfix"> </div>
+			</div>
 				<div class="name" >
 					<h2>简泽</h2>
 					<p style="color:antiquewhite">Web 工程师 & 设计师</p>
@@ -79,8 +87,7 @@
 					</ul>
 					</ul>
 				</div>
-			</div>
-							<div class="banner-btm-grid-w3ls">
+			</div>	<div class="banner-btm-grid-w3ls">
 		<div class="banner-left-wthree">
 			<img src="images/banner-btm.jpg" alt=" " class="img-responsive">
 			<ul class="address">
@@ -381,7 +388,7 @@
 
 	<div class="footer">
 		<div class="container">
-			<p>相信如果你看到这里,觉得我还不错,请你给我一个面试邀约.来按这->></i><a target="_blank" href="tel:15581155868"><i class="fa fa-volume-control-phone" aria-hidden="true" style="margin-left: 1em"></i></a></p>
+			<a target="_blank" href="tel:15581155868"><p>相信如果你看到这里,觉得我还不错,请你给我一个面试邀约.</i><i class="fa fa-volume-control-phone" aria-hidden="true" style="margin-left: 1em"></i></a></p>
 		</div>
 	</div>
 <!-- //footer -->
@@ -391,10 +398,6 @@
 	<script type="text/javascript">
 	 
 	(function ($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
 				$(".menu-icon").on("click", function () {
 					$(this).toggleClass("open");
 					$(".container").toggleClass("nav-open");
@@ -408,11 +411,7 @@
 					e.preventDefault();
 					$("#weixinimg").fadeToggle(500);
 				});
-				$(".menu-icon").on("click", function(){
-						$(this).toggleClass("open");
-						$(".container").toggleClass("nav-open");
-						$("nav ul li").toggleClass("animate");
-				  });
+				
 				function sendEmail() {
 		 		var name = $("[name='Name']").val(),
 				email = $("[name='Email']").val(),
