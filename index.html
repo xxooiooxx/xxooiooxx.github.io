@@ -23,14 +23,7 @@
 <!-- start-smooth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
+
 <!-- start-smooth-scrolling -->
 </head>
 	
@@ -69,7 +62,7 @@
 				</div>
 				<div class="name" >
 					<h2>简泽</h2>
-					<p> Web 工程师 & 设计师</p>
+					<p style="color:antiquewhite">Web 工程师 & 设计师</p>
 				</div>
 				<div class="social-icons animated wow bounceInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
 					<ul class="top-links">
@@ -142,16 +135,6 @@
 		<div class="clearfix"></div>
 	</div>
 		</div>
-			<script>
-				(function($){
-				  $(".menu-icon").on("click", function(){
-						$(this).toggleClass("open");
-						$(".container").toggleClass("nav-open");
-						$("nav ul li").toggleClass("animate");
-				  });
-				  
-				})(jQuery);
-			</script>
 		
 	</div>
 
@@ -398,7 +381,7 @@
 
 	<div class="footer">
 		<div class="container">
-			<p>相信如果你看到这里,决定还不错,请你给我一个面试邀约.来按这><a target="_blank" href="tel:15581155868"><i class="fa fa-volume-control-phone" aria-hidden="true" style="margin-left: 1em"></i></a></p>
+			<p>相信如果你看到这里,觉得我还不错,请你给我一个面试邀约.来按这->></i><a target="_blank" href="tel:15581155868"><i class="fa fa-volume-control-phone" aria-hidden="true" style="margin-left: 1em"></i></a></p>
 		</div>
 	</div>
 <!-- //footer -->
@@ -406,13 +389,12 @@
 
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
-	 jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-			});
-		});
+	 
 	(function ($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
 				$(".menu-icon").on("click", function () {
 					$(this).toggleClass("open");
 					$(".container").toggleClass("nav-open");
@@ -426,12 +408,13 @@
 					e.preventDefault();
 					$("#weixinimg").fadeToggle(500);
 				});
-
-			})(jQuery);
-   
-
-function sendEmail() {
-			var name = $("[name='Name']").val(),
+				$(".menu-icon").on("click", function(){
+						$(this).toggleClass("open");
+						$(".container").toggleClass("nav-open");
+						$("nav ul li").toggleClass("animate");
+				  });
+				function sendEmail() {
+		 		var name = $("[name='Name']").val(),
 				email = $("[name='Email']").val(),
 				number = $("[name='Number']").val(),
 				message = $("[name='message']").val(),
@@ -443,10 +426,14 @@ function sendEmail() {
 			document.getElementById("send").click();
 		}
 		// $(window).ready($(".btn").click(sendEmail))
-		$(window).ready(
+		
 			$(".btn").click(sendEmail)
-		);				
-			});
+			
+			})(jQuery);
+   
+
+		
+	
 	</script>
 <!-- //here ends scrolling icon -->
 </body>
